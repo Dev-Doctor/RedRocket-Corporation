@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Red Rocket - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script type='text/javascript' src='index.js'></script>
+    <!--<script src='main.js'></script>-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topBT" title="Go to top">&#x2191</button>
+    <header>
+        <a href="index.html" class="logo">RedRocket</a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sponsors">Our Sponsors</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="cta"><button>Back Home</button></a>
+    </header>
+    <div class="root">
+        <div class="about">
+            <div class="about_text_div prenote">
+                <p>We are working on a new portal to prenote.</p>
+                <p>We are sorry for the unease</p>
+                <a href="index.html">Back Home</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var mybutton = document.getElementById("topBT");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        <p>© 2077 RedRocket Corporation</p>
+    </footer>
+</body>
+
+</html>

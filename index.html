@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Red Rocket - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script type='text/javascript' src='index.js'></script>
+    <!--<script src='main.js'></script>-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="topBT" title="Go to top">&#x2191</button>
+    <header>
+        <a href="#" class="logo">RedRocket</a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sponsors">Our Sponsors</a></li>
+            </ul>
+        </nav>
+        <a href="prenote.html" class="cta"><button>Prenote Online</button></a>
+    </header>
+    <div class="root">
+        <div class="big-image"></div>
+        <hr>
+        <span id="services"></span>
+        <div class="services">
+            <h1>Our Services</h1>
+            <p>We offer fusion and coolant refilling services as well as gasoline and diesel. We have avaible Coolant A
+                and Coolant C at our gas stations. At our largest Red Rocket stations are included convenience stores
+                offering Nuka-Cola soft drinks, slushies, tourist pamphlets, and Gray Tortoise cigarettes. The
+                facilities offered car washing services, frequently bundled with refueling, along with Red Rocket
+                Restaurants that are fully automated and open 24/7!</p>
+            <img src="images/refulling_robot.jpg" alt="">
+            <img src="images/services_2.jpg" alt="">
+        </div>
+        <span id="about"></span>
+        <div class="about">
+            <div class="about_text_div">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <span id="sponsors"></span>
+        <div class="sponsors">
+            <h1>Our Sponsors</h1>
+            <img src="images/nuka_cola_sponsor.jpg" alt="" id="img_1">
+            <img src="images/sugar_bombs_sponsor.jpg" alt="" id="img_2">
+            <img src="images/grey_tortoise.webp" alt="" id="img_3">
+            <img src="images/vault_tec_sponsor.jpg" alt="" id="img_4">
+            <ul>
+                <li>For that burst of atomic energy Nuka-Cola!</li>
+                <li>Sugar Bombs an explosive great taste! Today with a free captain cosmos decoder rin inside!</li>
+                <li>Grey Tortoise the best cigarettes on the marker! Today with 1% less tar!</li>
+                <li>Prepare for the future! Protect your family now with a secure interplanetary vault! Vault-Tec</li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var mybutton = document.getElementById("topBT");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <footer>
+        <p>© 2077 RedRocket Corporation</p>
+    </footer>
+</body>
+
+</html>
